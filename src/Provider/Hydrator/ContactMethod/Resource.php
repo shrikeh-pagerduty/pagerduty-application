@@ -1,13 +1,13 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource\Email;
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource\Phone;
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource\Push;
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource\Sms;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource\Email;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource\Phone;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource\Push;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource\Sms;
 
 use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource as ResourceHydrator;
 
@@ -15,7 +15,7 @@ final class Resource implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE = 'pagerduty.hydrator.resource';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

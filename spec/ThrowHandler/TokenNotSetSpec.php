@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Shrikeh\PagerDuty\Application\ThrowHandler;
+namespace spec\Shrikeh\PagerDuty\Pimple\ThrowHandler;
 
 use Pimple\Container;
-use Shrikeh\PagerDuty\Application\Exception\TokenNotSet as TokenNotSetException;
+use Shrikeh\PagerDuty\Pimple\Exception\TokenNotSet as TokenNotSetException;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;

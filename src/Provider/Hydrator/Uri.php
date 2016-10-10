@@ -1,5 +1,5 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider\Hydrator;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Hydrator;
 
 interface Uri
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application;
+namespace Shrikeh\PagerDuty\Pimple;
 
 use Pimple\Container;
 

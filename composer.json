@@ -1,4 +1,15 @@
 {
+    "name": "shrikeh/pagerduty-pimple",
+    "type": "library",
+    "description": "Service Providers for Pimple DI integration of my PagerDuty library",
+    "keywords": ["framework"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Barney Hanlon",
+            "email": "barney@shrikeh.net"
+        }
+    ],
     "require": {
         "shrikeh/pagerduty-core": "self.version",
         "pimple/pimple": "^3.0"
@@ -11,7 +22,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Shrikeh\\PagerDuty\\Application\\": "src"
+        "Shrikeh\\PagerDuty\\Pimple\\": "src"
       }
     }
 }

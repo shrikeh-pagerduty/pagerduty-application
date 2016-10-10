@@ -1,11 +1,11 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider\Hydrator;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Hydrator;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource;
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\Uri;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\Uri;
 
 use Shrikeh\PagerDuty\Hydrator\ContactMethod as ContactMethodHydrator;
 

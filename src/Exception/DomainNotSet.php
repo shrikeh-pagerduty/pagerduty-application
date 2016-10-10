@@ -1,9 +1,9 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Exception;
+namespace Shrikeh\PagerDuty\Pimple\Exception;
 
 use DomainException;
-use Shrikeh\PagerDuty\Application\Exception\VariableNotSet;
+use Shrikeh\PagerDuty\Pimple\Exception\VariableNotSet;
 
 class DomainNotSet extends DomainException implements VariableNotSet
 {

@@ -1,11 +1,11 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider\Hydrator;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Hydrator;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod;
-use Shrikeh\PagerDuty\Application\Provider\Hydrator\Uri;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod;
+use Shrikeh\PagerDuty\Pimple\Provider\Hydrator\Uri;
 
 use Shrikeh\PagerDuty\Hydrator\User as UserHydrator;
 
@@ -13,7 +13,7 @@ final class User implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_USER = 'pagerduty.hydrator.user';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

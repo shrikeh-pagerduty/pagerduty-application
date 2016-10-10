@@ -1,11 +1,11 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Decoder;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Decoder;
 
 use Pimple\Container;
-use Shrikeh\PagerDuty\Application\Provider\RegisterableService;
+use Shrikeh\PagerDuty\Pimple\Provider\RegisterableService;
 
-use Shrikeh\PagerDuty\Application\Provider\Decoder as DecoderServiceProvider;
+use Shrikeh\PagerDuty\Pimple\Provider\Decoder as DecoderServiceProvider;
 use Shrikeh\PagerDuty\Decoder\Json\Webmozart;
 use Webmozart\Json\JsonDecoder;
 
@@ -14,7 +14,7 @@ final class Json implements RegisterableService, DecoderServiceProvider
     const PROVIDER_DECODER_JSON = 'pagerduty.decoder.json';
     const PROVIDER_DECODER_JSON_WEBMOZART  = 'pagerduty.decoder.json.webmozart';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Client;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Client;
 
 use GuzzleHttp\Client as GuzzleClient;
 
@@ -8,14 +8,14 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 use Shrikeh\PagerDuty\Client\Guzzle as Client;
-use Shrikeh\PagerDuty\Application\Provider\Client as ClientServiceProvider;
-use Shrikeh\PagerDuty\Application\Provider\Http;
+use Shrikeh\PagerDuty\Pimple\Provider\Client as ClientServiceProvider;
+use Shrikeh\PagerDuty\Pimple\Provider\Http;
 
 final class Guzzle implements ServiceProviderInterface, ClientServiceProvider
 {
     const PROVIDER_CLIENT_GUZZLE = 'pagerduty.client.guzzle';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

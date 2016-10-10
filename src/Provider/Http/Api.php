@@ -1,20 +1,20 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Http;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Http;
 
 use GuzzleHttp\Psr7\Uri;
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
-use Shrikeh\PagerDuty\Application\Provider\Http;
-use Shrikeh\PagerDuty\Application\Provider\Auth;
-use Shrikeh\PagerDuty\Application\ThrowHandler\DomainNotSet;
+use Shrikeh\PagerDuty\Pimple\Provider\Http;
+use Shrikeh\PagerDuty\Pimple\Provider\Auth;
+use Shrikeh\PagerDuty\Pimple\ThrowHandler\DomainNotSet;
 
 final class Api implements ServiceProviderInterface, Http
 {
     const API_ACCEPT_HEADER = 'application/vnd.pagerduty+json;version=2';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

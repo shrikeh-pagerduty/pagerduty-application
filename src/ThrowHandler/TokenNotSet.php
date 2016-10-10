@@ -1,14 +1,14 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\ThrowHandler;
+namespace Shrikeh\PagerDuty\Pimple\ThrowHandler;
 
-use Shrikeh\PagerDuty\Application\Invokable;
-use Shrikeh\PagerDuty\Application\ThrowHandler;
-use Shrikeh\PagerDuty\Application\Exception\TokenNotSet as TokenNotSetException;
+use Shrikeh\PagerDuty\Pimple\Invokable;
+use Shrikeh\PagerDuty\Pimple\ThrowHandler;
+use Shrikeh\PagerDuty\Pimple\Exception\TokenNotSet as TokenNotSetException;
 
 final class TokenNotSet implements ThrowHandler, Invokable
 {
-    use \Shrikeh\PagerDuty\Application\VariableNotSet;
+    use \Shrikeh\PagerDuty\Pimple\VariableNotSet;
 
     public function throw()
     {

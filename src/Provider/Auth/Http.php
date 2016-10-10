@@ -1,15 +1,15 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Auth;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Auth;
 
-use Shrikeh\PagerDuty\Application\Provider\Auth;
-use Shrikeh\PagerDuty\Application\ThrowHandler\TokenNotSet;
+use Shrikeh\PagerDuty\Pimple\Provider\Auth;
+use Shrikeh\PagerDuty\Pimple\ThrowHandler\TokenNotSet;
 use Pimple\Container;
-use Shrikeh\PagerDuty\Application\Provider\RegisterableService;
+use Shrikeh\PagerDuty\Pimple\Provider\RegisterableService;
 
 final class Http implements Auth, RegisterableService
 {
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

@@ -1,19 +1,19 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Repository\OnCalls;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Repository\OnCalls;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 
 use Shrikeh\PagerDuty\Parser\OnCall\OnCallParser;
-use Shrikeh\PagerDuty\Application\Provider\Client;
-use Shrikeh\PagerDuty\Application\Provider\Decoder;
-use Shrikeh\PagerDuty\Application\Provider\Repository\OnCalls as OnCallsProvider;
+use Shrikeh\PagerDuty\Pimple\Provider\Client;
+use Shrikeh\PagerDuty\Pimple\Provider\Decoder;
+use Shrikeh\PagerDuty\Pimple\Provider\Repository\OnCalls as OnCallsProvider;
 use Shrikeh\PagerDuty\Repository\OnCalls\OnCallsRepository;
 
 final class OnCalls implements OnCallsProvider, ServiceProviderInterface
 {
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

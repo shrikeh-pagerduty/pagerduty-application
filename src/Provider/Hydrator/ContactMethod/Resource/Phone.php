@@ -1,5 +1,5 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Hydrator\ContactMethod\Resource;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
@@ -10,7 +10,7 @@ final class Phone implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE_PHONE = 'pagerduty.hydrator.resource.phone';
 
-    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 
     public function register(Container $container)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace Shrikeh\PagerDuty\Application\Provider;
+namespace Shrikeh\PagerDuty\Pimple\Provider;
 
 interface Client
 {

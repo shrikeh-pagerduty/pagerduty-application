@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Exception;
+namespace Shrikeh\PagerDuty\Pimple\Exception;
 
 interface VariableNotSet
 {

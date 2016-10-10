@@ -1,8 +1,8 @@
 ---
 suites:
   default:
-    namespace: Shrikeh\PagerDuty\Application
-    psr4_prefix: Shrikeh\PagerDuty\Application
+    namespace: Shrikeh\PagerDuty\Pimple
+    psr4_prefix: Shrikeh\PagerDuty\Pimple
     spec_prefix: spec
     src_path: %paths.config%/src
     spec_path: %paths.config%

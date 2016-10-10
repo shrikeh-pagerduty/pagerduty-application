@@ -1,6 +1,6 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\Provider\Repository;
+namespace Shrikeh\PagerDuty\Pimple\Provider\Repository;
 
 interface OnCalls
 {

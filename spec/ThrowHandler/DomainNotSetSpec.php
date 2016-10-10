@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Shrikeh\PagerDuty\Application\ThrowHandler;
+namespace spec\Shrikeh\PagerDuty\Pimple\ThrowHandler;
 
 use Pimple\Container;
-use Shrikeh\PagerDuty\Application\Exception\DomainNotSet as DomainNotSetException;
+use Shrikeh\PagerDuty\Pimple\Exception\DomainNotSet as DomainNotSetException;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;

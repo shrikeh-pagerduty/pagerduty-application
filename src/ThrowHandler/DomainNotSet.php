@@ -1,14 +1,14 @@
 <?php
 
-namespace Shrikeh\PagerDuty\Application\ThrowHandler;
+namespace Shrikeh\PagerDuty\Pimple\ThrowHandler;
 
-use Shrikeh\PagerDuty\Application\Invokable;
-use Shrikeh\PagerDuty\Application\ThrowHandler;
-use Shrikeh\PagerDuty\Application\Exception\DomainNotSet as DomainNotSetException;
+use Shrikeh\PagerDuty\Pimple\Invokable;
+use Shrikeh\PagerDuty\Pimple\ThrowHandler;
+use Shrikeh\PagerDuty\Pimple\Exception\DomainNotSet as DomainNotSetException;
 
 final class DomainNotSet implements Invokable, ThrowHandler
 {
-  use \Shrikeh\PagerDuty\Application\VariableNotSet;
+  use \Shrikeh\PagerDuty\Pimple\VariableNotSet;
 
   public function throw()
   {
