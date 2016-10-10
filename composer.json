@@ -1,6 +1,6 @@
 {
     "require": {
-        "shrikeh/pagerduty-core": "dev-master",
+        "shrikeh/pagerduty-core": "self.version",
         "pimple/pimple": "^3.0"
     },
     "require-dev": {
