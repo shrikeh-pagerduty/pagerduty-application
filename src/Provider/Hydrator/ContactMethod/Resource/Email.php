@@ -10,6 +10,8 @@ final class Email implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE_EMAIL = 'pagerduty.hydrator.resource.email';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container[static::PROVIDER_HYDRATOR_RESOURCE_EMAIL] = function(Container $c) {

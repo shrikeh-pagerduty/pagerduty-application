@@ -14,6 +14,8 @@ final class Api implements ServiceProviderInterface, Http
 {
     const API_ACCEPT_HEADER = 'application/vnd.pagerduty+json;version=2';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         if (! $container->offsetExists(static::PROVIDER_HTTP_DOMAIN)) {

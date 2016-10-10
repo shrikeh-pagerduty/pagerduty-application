@@ -15,6 +15,8 @@ final class Resource implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE = 'pagerduty.hydrator.resource';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container = $this->addResourceProviders($container);
@@ -38,7 +40,7 @@ final class Resource implements ServiceProviderInterface
         ];
         foreach ($providers as $provider => $class) {
             if (!$container->offsetExists($provider)) {
-                $container->register(new $class());
+                $class::registerWith($container);
             }
         }
         return $container;

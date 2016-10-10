@@ -10,6 +10,8 @@ final class Phone implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE_PHONE = 'pagerduty.hydrator.resource.phone';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container[static::PROVIDER_HYDRATOR_RESOURCE_PHONE] = function(Container $c) {

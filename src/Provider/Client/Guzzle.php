@@ -15,6 +15,8 @@ final class Guzzle implements ServiceProviderInterface, ClientServiceProvider
 {
     const PROVIDER_CLIENT_GUZZLE = 'pagerduty.client.guzzle';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container = $this->guzzle($container);

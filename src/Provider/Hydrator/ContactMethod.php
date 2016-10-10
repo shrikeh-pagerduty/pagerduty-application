@@ -28,7 +28,7 @@ final class ContactMethod implements ServiceProviderInterface
     private function addResourceProviders(Container $container)
     {
         if (!$container->offsetExists(Resource::PROVIDER_HYDRATOR_RESOURCE)) {
-            $container->register(new Resource());
+            Resource::registerWith($container);
         }
         return $container;
     }

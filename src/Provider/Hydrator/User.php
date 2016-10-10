@@ -13,6 +13,8 @@ final class User implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_USER = 'pagerduty.hydrator.user';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container = $this->addResourceProviders($container);

@@ -13,6 +13,8 @@ use Shrikeh\PagerDuty\Repository\OnCalls\OnCallsRepository;
 
 final class OnCalls implements OnCallsProvider, ServiceProviderInterface
 {
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container[static::PROVIDER_REPOSITORY_ONCALLS] = function(Container $c) {

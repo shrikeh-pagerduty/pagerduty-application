@@ -10,6 +10,8 @@ final class Push implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE_PUSH = 'pagerduty.hydrator.resource.push';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+    
     public function register(Container $container)
     {
         $container[static::PROVIDER_HYDRATOR_RESOURCE_PUSH] = function(Container $c) {

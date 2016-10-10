@@ -3,16 +3,18 @@
 namespace Shrikeh\PagerDuty\Application\Provider\Decoder;
 
 use Pimple\Container;
-use Pimple\ServiceProviderInterface;
+use Shrikeh\PagerDuty\Application\Provider\RegisterableService;
 
 use Shrikeh\PagerDuty\Application\Provider\Decoder as DecoderServiceProvider;
 use Shrikeh\PagerDuty\Decoder\Json\Webmozart;
 use Webmozart\Json\JsonDecoder;
 
-final class Json implements ServiceProviderInterface, DecoderServiceProvider
+final class Json implements RegisterableService, DecoderServiceProvider
 {
     const PROVIDER_DECODER_JSON = 'pagerduty.decoder.json';
     const PROVIDER_DECODER_JSON_WEBMOZART  = 'pagerduty.decoder.json.webmozart';
+
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
 
     public function register(Container $container)
     {

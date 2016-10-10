@@ -12,6 +12,8 @@ use Shrikeh\PagerDuty\Application\Provider\Hydrator\User as UserHydratorProvider
 
 final class Users implements UsersRepositoryProvider, ServiceProviderInterface
 {
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container = $this->addResourceProviders($container);
@@ -26,7 +28,7 @@ final class Users implements UsersRepositoryProvider, ServiceProviderInterface
     private function addResourceProviders(Container $container)
     {
         if (!$container->offsetExists(UserHydratorProvider::PROVIDER_HYDRATOR_USER)) {
-            $container->register(new UserHydratorProvider());
+            UserHydratorProvider::registerWith($container);
         }
         return $container;
     }

@@ -10,6 +10,8 @@ final class Sms implements ServiceProviderInterface
 {
     const PROVIDER_HYDRATOR_RESOURCE_SMS = 'pagerduty.hydrator.resource.sms';
 
+    use \Shrikeh\PagerDuty\Application\Provider\RegisterWith;
+
     public function register(Container $container)
     {
         $container[static::PROVIDER_HYDRATOR_RESOURCE_SMS] = function(Container $c) {

@@ -1,26 +1,27 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use Shrikeh\PagerDuty\Application\Provider\Client\Guzzle;
 use Shrikeh\PagerDuty\Application\Provider\Hydrator\Uri\Guzzle as GuzzleUri;
+
 use Shrikeh\PagerDuty\Application\Provider\Http\Api;
-use Shrikeh\PagerDuty\Application\Provider\Decoder\Json;
 use Shrikeh\PagerDuty\Application\Provider\Auth\Http;
 use Shrikeh\PagerDuty\Application\Provider\Repository\OnCalls\OnCalls;
-use Shrikeh\PagerDuty\Application\Provider\Repository\Users\Users;
 use Shrikeh\PagerDuty\Application\Provider\Hydrator\ContactMethod\Resource;
 use Shrikeh\PagerDuty\Repository\Users\Users as UserRepository;
+use Shrikeh\PagerDuty\Application\Provider\Repository\Users\Users;
 
 $container = new Pimple\Container();
 
-$container->register(new Guzzle());
-$container->register(new Json());
-$container->register(new Http());
-$container->register(new Api());
-$container->register(new Resource());
-$container->register(new OnCalls());
-$container->register(new Users());
-$container->register(new GuzzleUri());
+Shrikeh\PagerDuty\Application\Provider\Http\Api::registerWith($container);
+Shrikeh\PagerDuty\Application\Provider\Client\Guzzle::registerWith($container);
+Shrikeh\PagerDuty\Application\Provider\Decoder\Json::registerWith($container);
+Shrikeh\PagerDuty\Application\Provider\Auth\Http::registerWith($container);
+Shrikeh\PagerDuty\Application\Provider\Repository\Users\Users::registerWith($container);
+
+Resource::registerWith($container);
+OnCalls::registerWith($container);
+
+GuzzleUri::registerWith($container);
 
 $container[Api::PROVIDER_HTTP_DOMAIN] = getenv('API_HTTP_DOMAIN');
 $container[Http::PROVIDER_AUTH_TOKEN] = getenv('API_AUTH_TOKEN');

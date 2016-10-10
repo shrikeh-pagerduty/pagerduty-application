@@ -1,5 +1,6 @@
 {
     "require": {
+        "shrikeh/pagerduty-core": "dev-master",
         "pimple/pimple": "^3.0"
     },
     "require-dev": {
