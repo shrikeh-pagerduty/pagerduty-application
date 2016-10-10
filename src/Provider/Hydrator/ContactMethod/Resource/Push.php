@@ -8,7 +8,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource\Push as PushHydrator;
 
 final class Push implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_RESOURCE_PUSH = 'pagerduty.hydrator.resource.push';
+    const PROVIDER_HYDRATOR_RESOURCE_PUSH = 'hydrator.resource.push';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
     

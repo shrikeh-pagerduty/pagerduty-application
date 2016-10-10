@@ -8,7 +8,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource\Email as EmailHydrator;
 
 final class Email implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_RESOURCE_EMAIL = 'pagerduty.hydrator.resource.email';
+    const PROVIDER_HYDRATOR_RESOURCE_EMAIL = 'hydrator.resource.email';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

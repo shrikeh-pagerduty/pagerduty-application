@@ -13,7 +13,7 @@ use Shrikeh\PagerDuty\Pimple\Provider\Http;
 
 final class Guzzle implements ServiceProviderInterface, ClientServiceProvider
 {
-    const PROVIDER_CLIENT_GUZZLE = 'pagerduty.client.guzzle';
+    const PROVIDER_CLIENT_GUZZLE = 'client.guzzle';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

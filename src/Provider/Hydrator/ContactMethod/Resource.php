@@ -13,7 +13,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource as ResourceHydrator;
 
 final class Resource implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_RESOURCE = 'pagerduty.hydrator.resource';
+    const PROVIDER_HYDRATOR_RESOURCE = 'hydrator.resource';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

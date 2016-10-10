@@ -8,7 +8,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource\Phone as PhoneHydrator;
 
 final class Phone implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_RESOURCE_PHONE = 'pagerduty.hydrator.resource.phone';
+    const PROVIDER_HYDRATOR_RESOURCE_PHONE = 'hydrator.resource.phone';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

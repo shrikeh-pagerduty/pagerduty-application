@@ -4,5 +4,5 @@ namespace Shrikeh\PagerDuty\Pimple\Provider\Repository;
 
 interface Users
 {
-    const PROVIDER_REPOSITORY_USERS = 'pagerduty.repository.users';
+    const PROVIDER_REPOSITORY_USERS = 'repository.users';
 }

@@ -11,8 +11,8 @@ use Webmozart\Json\JsonDecoder;
 
 final class Json implements RegisterableService, DecoderServiceProvider
 {
-    const PROVIDER_DECODER_JSON = 'pagerduty.decoder.json';
-    const PROVIDER_DECODER_JSON_WEBMOZART  = 'pagerduty.decoder.json.webmozart';
+    const PROVIDER_DECODER_JSON = 'decoder.json';
+    const PROVIDER_DECODER_JSON_WEBMOZART  = 'decoder.json.webmozart';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

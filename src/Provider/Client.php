@@ -3,5 +3,5 @@ namespace Shrikeh\PagerDuty\Pimple\Provider;
 
 interface Client
 {
-    const PROVIDER_CLIENT = 'pagerduty.client';
+    const PROVIDER_CLIENT = 'client';
 }

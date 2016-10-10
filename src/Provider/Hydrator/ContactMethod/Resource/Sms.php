@@ -8,7 +8,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod\Resource\Sms as SmsHydrator;
 
 final class Sms implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_RESOURCE_SMS = 'pagerduty.hydrator.resource.sms';
+    const PROVIDER_HYDRATOR_RESOURCE_SMS = 'hydrator.resource.sms';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

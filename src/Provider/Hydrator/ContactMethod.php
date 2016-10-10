@@ -11,7 +11,7 @@ use Shrikeh\PagerDuty\Hydrator\ContactMethod as ContactMethodHydrator;
 
 final class ContactMethod implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_CONTACTMETHOD = 'pagerduty.hydrator.contactmethod';
+    const PROVIDER_HYDRATOR_CONTACTMETHOD = 'hydrator.contactmethod';
 
     public function register(Container $container)
     {

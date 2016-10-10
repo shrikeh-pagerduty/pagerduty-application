@@ -11,7 +11,7 @@ use Shrikeh\PagerDuty\Hydrator\User as UserHydrator;
 
 final class User implements ServiceProviderInterface
 {
-    const PROVIDER_HYDRATOR_USER = 'pagerduty.hydrator.user';
+    const PROVIDER_HYDRATOR_USER = 'hydrator.user';
 
     use \Shrikeh\PagerDuty\Pimple\Provider\RegisterWith;
 

@@ -4,5 +4,5 @@ namespace Shrikeh\PagerDuty\Pimple\Provider\Repository;
 
 interface OnCalls
 {
-    const PROVIDER_REPOSITORY_ONCALLS = 'pagerduty.repository.oncalls';
+    const PROVIDER_REPOSITORY_ONCALLS = 'repository.oncalls';
 }
