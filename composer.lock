@@ -387,22 +387,63 @@
             "time": "2016-09-14 15:17:56"
         },
         {
+            "name": "shrikeh/collections",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shrikeh/php-immutable-collections.git",
+                "reference": "61d17cc44c9a34f11642167503230aa8a4465c69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shrikeh/php-immutable-collections/zipball/61d17cc44c9a34f11642167503230aa8a4465c69",
+                "reference": "61d17cc44c9a34f11642167503230aa8a4465c69",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpspec/phpspec": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Shrikeh\\Collection\\": "src",
+                    "Shrikeh\\Collection\\Examples\\": "examples"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barney Hanlon",
+                    "email": "barney@shrikeh.net"
+                }
+            ],
+            "description": "Traits for re-use in immutable collections",
+            "keywords": [
+                "library"
+            ],
+            "time": "2016-10-14 08:22:36"
+        },
+        {
             "name": "shrikeh/pagerduty-core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shrikeh-pagerduty/pagerduty-core.git",
-                "reference": "07d269a08a32aaba727dca62146552bc276d736f"
+                "reference": "fff674e8ec7523e3e05d2825008418363738d610"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/07d269a08a32aaba727dca62146552bc276d736f",
-                "reference": "07d269a08a32aaba727dca62146552bc276d736f",
+                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/fff674e8ec7523e3e05d2825008418363738d610",
+                "reference": "fff674e8ec7523e3e05d2825008418363738d610",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.2",
                 "psr/http-message": "^1.0",
+                "shrikeh/collections": "^1.0",
                 "webmozart/json": "^1.2"
             },
             "require-dev": {
@@ -428,7 +469,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-10-10 14:17:29"
+            "time": "2016-10-14 08:36:34"
         },
         {
             "name": "webmozart/assert",
