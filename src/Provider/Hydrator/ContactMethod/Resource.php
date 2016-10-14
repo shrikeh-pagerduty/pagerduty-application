@@ -21,7 +21,7 @@ final class Resource implements ServiceProviderInterface
     {
         $container = $this->addResourceProviders($container);
         $container[static::PROVIDER_HYDRATOR_RESOURCE] = function(Container $c) {
-          return new ResourceHydrator([
+          return ResourceHydrator::fromArray([
             $c[Email::PROVIDER_HYDRATOR_RESOURCE_EMAIL],
             $c[Phone::PROVIDER_HYDRATOR_RESOURCE_PHONE],
             $c[Push::PROVIDER_HYDRATOR_RESOURCE_PUSH],
