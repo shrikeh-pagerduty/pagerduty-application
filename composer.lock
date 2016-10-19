@@ -388,16 +388,16 @@
         },
         {
             "name": "shrikeh/collections",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/shrikeh/php-immutable-collections.git",
-                "reference": "61d17cc44c9a34f11642167503230aa8a4465c69"
+                "reference": "4752ccdcffad4d1ed21887b299b8a0186a3d7792"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shrikeh/php-immutable-collections/zipball/61d17cc44c9a34f11642167503230aa8a4465c69",
-                "reference": "61d17cc44c9a34f11642167503230aa8a4465c69",
+                "url": "https://api.github.com/repos/shrikeh/php-immutable-collections/zipball/4752ccdcffad4d1ed21887b299b8a0186a3d7792",
+                "reference": "4752ccdcffad4d1ed21887b299b8a0186a3d7792",
                 "shasum": ""
             },
             "require-dev": {
@@ -424,7 +424,7 @@
             "keywords": [
                 "library"
             ],
-            "time": "2016-10-14 08:22:36"
+            "time": "2016-10-18 10:59:15"
         },
         {
             "name": "shrikeh/pagerduty-core",
@@ -432,12 +432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shrikeh-pagerduty/pagerduty-core.git",
-                "reference": "5c4b9ff923e1976ccf8981145141b9ecbf33182d"
+                "reference": "c038fafde4ba30acd0c44c28fab52c8ead4e67e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/5c4b9ff923e1976ccf8981145141b9ecbf33182d",
-                "reference": "5c4b9ff923e1976ccf8981145141b9ecbf33182d",
+                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/c038fafde4ba30acd0c44c28fab52c8ead4e67e5",
+                "reference": "c038fafde4ba30acd0c44c28fab52c8ead4e67e5",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-10-14 11:23:33"
+            "time": "2016-10-18 11:30:10"
         },
         {
             "name": "webmozart/assert",
