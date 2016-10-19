@@ -432,12 +432,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/shrikeh-pagerduty/pagerduty-core.git",
-                "reference": "c038fafde4ba30acd0c44c28fab52c8ead4e67e5"
+                "reference": "1a93f41b3202196f9f8882f8bf15cef6a2d191a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/c038fafde4ba30acd0c44c28fab52c8ead4e67e5",
-                "reference": "c038fafde4ba30acd0c44c28fab52c8ead4e67e5",
+                "url": "https://api.github.com/repos/shrikeh-pagerduty/pagerduty-core/zipball/1a93f41b3202196f9f8882f8bf15cef6a2d191a8",
+                "reference": "1a93f41b3202196f9f8882f8bf15cef6a2d191a8",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-10-18 11:30:10"
+            "time": "2016-10-19 13:24:32"
         },
         {
             "name": "webmozart/assert",
